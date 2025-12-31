@@ -8,9 +8,11 @@
       font-family: Arial, sans-serif;
       background: #f4f6f8;
       display: flex;
-      justify-content: center;
+      flex-direction: column;
+      justify-content: flex-start;
       align-items: center;
-      height: 100vh;
+      padding-top: 6vh;
+      min-height: 100vh;
     }
     .card {
       background: #fff;
@@ -18,6 +20,16 @@
       border-radius: 12px;
       width: 320px;
       box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+    .site-title {
+      text-align: center;
+      color: #2563eb;
+      font-size: 2.2rem;
+      font-weight: 800;
+      margin-bottom: 20px;
+      line-height: 1.05;
+      letter-spacing: 0.6px;
+      text-shadow: 0 3px 8px rgba(255,255,255,0.95);
     }
     h2 { text-align: center; }
     input, button {
@@ -69,6 +81,7 @@
   }
 </script>
   <!-- LOGIN -->
+  <div class="site-title">Entrega Eficiente</div>
   <div class="card" id="login">
     <h2>Iniciar sesión</h2>
     <input type="text" id="user" placeholder="Usuario">
